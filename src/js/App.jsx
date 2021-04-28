@@ -50,7 +50,7 @@ const App = () => {
 			<NavBar />
 			<div className="container">
 				<Jumbotron />
-				<div className="row mt-3">
+				<div className="row mt-3 mb-3">
 					{cards.map((item, i) => {
 						return (
 							<Cards2
