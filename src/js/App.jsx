@@ -1,7 +1,8 @@
 import React from "react";
 import { NavBar } from "./component/navbar.jsx";
 import { Jumbotron } from "./component/jumbotron.jsx";
-import { Cards } from "./component/cards.jsx";
+//import { Cards } from "./component/cards.jsx";
+import { Cards2 } from "./component/cards2.jsx";
 import { Footer } from "./component/footer.jsx";
 
 const App = () => {
@@ -18,7 +19,7 @@ const App = () => {
 		{
 			name: "Paul Mccartney",
 			description:
-				"James Paul McCartney es un cantautor, compositor, músico, multiinstrumentista, escritor y actor británico.",
+				"James Paul McCartney es un artista, escritor y actor británico y es uno de los artistas más exitosos de todos los tiempos",
 			imageURL:
 				"https://los40es00.epimg.net/los40/imagenes/2020/12/23/los40classic/1608723212_225459_1608723516_noticia_normal.jpg",
 			buttonLabel: "Wikipedia",
@@ -49,10 +50,10 @@ const App = () => {
 			<NavBar />
 			<div className="container">
 				<Jumbotron />
-				<div className="row">
+				<div className="row mt-3">
 					{cards.map((item, i) => {
 						return (
-							<Cards
+							<Cards2
 								key={i}
 								name={item.name}
 								description={item.description}

@@ -7,17 +7,26 @@ export const Cards = props => {
 		//margin: "10px"
 	};
 
+	const pictureStyle = {
+		position: "relative"
+	};
+
 	const imgStyle = {
-		//width: "500px"
+		position: "absolute",
+		width: "100%",
+		height: "100%",
+		objectFit: "cover"
 	};
 
 	return (
 		<div className="card col-3" style={style}>
-			<img
-				src={props.imageUrl}
-				className="card-img-top"
-				alt="card image"
-				style={imgStyle}></img>
+			<picture style={pictureStyle}>
+				<img
+					src={props.imageUrl}
+					className="card-img-top img-fluid"
+					alt="card image"
+					style={imgStyle}></img>
+			</picture>
 			<div className="card-body">
 				<h5 className="card-title">{props.title}</h5>
 				<p className="card-text">{props.description}</p>
